@@ -1,6 +1,6 @@
 {
   "name": "homebridge-dahua-gate-release",
-  "version": "1.1.10",
+  "version": "1.1.11",
   "description": "Homebridge plugin to release electronic gate/door controlled by a Dahua VTO2111D (VIP INTIPRDSDJ) intercom using Digest Auth. May work with other Dahua models.",
   "main": "dahua-gate-index.js",
   "keywords": [
