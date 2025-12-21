@@ -12,6 +12,9 @@
     "release",
     "accessControl"
   ],
+  "publishConfig": {
+  "access": "public"
+},
   "author": {
     "name": "netmatrixtech"
   },
