@@ -1,6 +1,6 @@
 # homebridge-dahua-gate-release
 Homebridge plugin to release eletronic gate/door controlled by a Dahua VTO2111D (VIP INTIPRDSDJ) intercom (Digest Auth). While not tested with other Dahua intercoms, this may still work with other models.
-
+Great for using the Apple Home app or even asking Siri to 'Open the gate!'.
 # Homebridge Dahua Gate Release
 
 This plugin adds a virtual switch to HomeKit. Turning it on (or asking Siri) sends `openDoor` CGI command to a Dahua VTO2111D intercom.
