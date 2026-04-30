@@ -1,3 +1,9 @@
+![npm](https://img.shields.io/npm/v/homebridge-dahua-gate-release)
+![npm downloads](https://img.shields.io/npm/dt/homebridge-dahua-gate-release)
+![Node.js](https://img.shields.io/badge/node-%3E=18.0.0-green)
+![Homebridge](https://img.shields.io/badge/homebridge-%3E=1.6.0-blue)
+![License](https://img.shields.io/github/license/netmatrixtech/homebridge-dahua-gate-release)
+
 # homebridge-dahua-gate-release
 Homebridge plugin to initiate an eletronic gate/door controlled by a Dahua VTO2111D (VIP INTIPRDSDJ) intercom (Digest Auth). While not tested with other Dahua intercoms, this may still work with other models.
 Great for using the Apple Home app or even asking Siri to 'Open the gate!'.
