@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "pluginAlias": "DahuaGateRelease",
-  "pluginType": "accessory",
-  "singular": true,
+  "pluginAlias": "Dahua Gate Release",
+  "pluginType": "platform",
+  "singular": false,
 
   "schema": {
     "title": "Dahua Gate Release",
