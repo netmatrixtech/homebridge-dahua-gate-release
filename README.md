@@ -8,8 +8,10 @@
 ![Node.js](https://img.shields.io/badge/node-%3E=18.0.0-green)
 ![Homebridge](https://img.shields.io/badge/homebridge-%3E=1.6.0-blue)
 ![License](https://img.shields.io/github/license/netmatrixtech/homebridge-dahua-gate-release)
+
 <span>
-<p align="left">
+
+
 # Homebridge Dahua Gate Release (Platform Plugin)
 
 A Homebridge plugin that creates a virtual button to unlock the strike plate lock mechanism connected to a Dahua VTO2111D Intercom.  Other models not tested but may work.
@@ -22,8 +24,8 @@ The plugin adds a virtual switch to HomeKit. Turning it on (or asking Siri) send
 ### Prerequisites
 
 - To use this plugin, you will need to already have:
-  - [Node](https://nodejs.org): latest version of `v22` or `v24. (26 not tested)
-  - [Homebridge](https://homebridge.io): `v1.6` - refer to link for more information and installation instructions.
+  - [Node](https://nodejs.org): latest version of `v22` or `v24`. (`26` not tested)
+  - [Homebridge](https://homebridge.io): `v1.6`-v2.0.1 - refer to link for more information and installation instructions.
 
 ## Configuration
 
@@ -112,5 +114,3 @@ After installation:
 - I have no affiliation with Dahua or any company rebanding Dahua devices.
 - Use this plugin at your own risk.
 - You are licensed to use this plugin free of charge but within the limited of the license distributed with this plugin.
-
-</p>
