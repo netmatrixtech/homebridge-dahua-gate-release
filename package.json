@@ -1,6 +1,6 @@
 {
   "name": "homebridge-dahua-gate-release",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Homebridge platform plugin to release an electronic gate/door controlled by a Dahua VTO intercom using Digest Auth.",
   "main": "index.js",
   "type": "commonjs",
@@ -32,8 +32,8 @@
     "url": "https://github.com/netmatrixtech/homebridge-dahua-gate-release/issues"
   },
   "engines": {
-    "node": ">=24.0.0",
-    "homebridge": ">=1.6.0"
+    "homebridge": "^1.6.0 || ^2.0.0",
+    "node": "^22.12.0 || ^24.0.0"
   },
   "homebridge": {
     "pluginType": "platform",
