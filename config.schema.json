@@ -2,40 +2,44 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "pluginAlias": "DahuaGateRelease",
   "pluginType": "platform",
-  "singular": true,
 
   "schema": {
     "title": "Dahua Gate Release",
     "type": "object",
 
-    "required": ["name", "ip", "username", "password"],
+    "required": ["name", "accessoryName", "ip", "username", "password"],
 
     "properties": {
       "name": {
         "type": "string",
-        "title": "Accessory Name",
+        "title": "Platform / Child Bridge Name",
         "default": "Dahua Gate Release",
         "minLength": 1
       },
-
+		"accessoryName": {
+		  "type": "string",
+		  "title": "Accessory Name (shown in Home app)",
+		  "default": "Dahua Gate",
+		  "minLength": 1
+		},
       "ip": {
         "type": "string",
         "title": "Intercom IP Address",
         "format": "ipv4",
-        "placeholder": "192.168.1.50",
-        "description": "The IP address of your Dahua VTO intercom."
+        "placeholder": "192.168.1.110",
+        "description": "The IP address of your Dahua or Rebranded VTO intercom."
       },
 
       "username": {
         "type": "string",
-        "title": "Username",
+        "title": "Intercom username",
         "minLength": 1,
         "placeholder": "admin"
       },
 
       "password": {
         "type": "string",
-        "title": "Password",
+        "title": "Intercom Password",
         "minLength": 1,
         "format": "password",
         "placeholder": "••••••••"
@@ -59,16 +63,16 @@
 
       "autoLockTime": {
         "type": "integer",
-        "title": "Auto-lock Duration",
-        "description": "Time before gate auto-locks. Set to 0 to disable.",
+        "title": "Accessory Auto-lock Duration (not the physical lock)",
+        "description": "This is the duration the accessory / Home App button appears open before it reverts the button back to a locked state. Set to 0 to disable auto-lock. Note: The auto-lock duration of the physical strike plate is set within the intercom itself. The intercom doesn't allow Close commands to relock.",
         "minimum": 0,
-        "default": 0
+        "default": 20
       },
 
       "autoLockUnit": {
         "type": "string",
         "title": "Auto-lock Unit",
-        "description": "Unit of time for auto-lock duration.",
+        "description": "",
         "enum": ["seconds", "hours", "days"],
         "default": "seconds"
       },
@@ -94,7 +98,7 @@
         "type": "fieldset",
         "title": "Connection Settings",
         "expandable": false,
-        "items": ["name", "ip", "username", "password"]
+       "items": ["name", "accessoryName", "ip", "username", "password"]
       },
       {
         "type": "fieldset",
