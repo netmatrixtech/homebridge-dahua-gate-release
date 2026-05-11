@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 
 ---
-## [2.1.0] - 2026-05-11
+## [2.1.4] - 2026-05-11
 ### Added
 - New `accessoryName` config option allowing users to name the HomeKit accessory independently of the platform/child bridge name
 - Updated UUID generation to use `accessoryName`

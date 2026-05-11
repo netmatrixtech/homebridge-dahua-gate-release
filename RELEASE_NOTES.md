@@ -1,4 +1,4 @@
-## 🚀 Version 2.1.0 — Accessory Renaming Support
+## 🚀 Version 2.1.4 — Accessory Renaming Support
 
 This update adds one of the most requested features:  
 You can now name the HomeKit accessory separately from the platform/child bridge.
