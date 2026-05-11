@@ -1,5 +1,5 @@
 <p align="center">
- <a href="https://github.com/netmatrixtech/homebridge-dahua-gate-release"><img alt="Dahua Gate Release" src="https://github.com/netmatrixtech/homebridge-dahua-gate-release/blog/main/assets/icon-medium.png" width="370px"></a>
+ <a href="https://github.com/netmatrixtech/homebridge-dahua-gate-release"><img alt="Dahua Gate Release" src="/assets/icon-medium.png" width="370px"></a>
 </p>
 <span align="center">
 
@@ -8,6 +8,7 @@
 ![Node.js](https://img.shields.io/badge/node-%3E=18.0.0-green)
 ![Homebridge](https://img.shields.io/badge/homebridge-%3E=1.6.0-blue)
 ![License](https://img.shields.io/github/license/netmatrixtech/homebridge-dahua-gate-release)
+<span>
 
 # Homebridge Dahua Gate Release (Platform Plugin)
 
