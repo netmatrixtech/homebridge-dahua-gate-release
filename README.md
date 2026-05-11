@@ -9,7 +9,7 @@
 ![Homebridge](https://img.shields.io/badge/homebridge-%3E=1.6.0-blue)
 ![License](https://img.shields.io/github/license/netmatrixtech/homebridge-dahua-gate-release)
 <span>
-
+<p align="left">
 # Homebridge Dahua Gate Release (Platform Plugin)
 
 A Homebridge plugin that creates a virtual button to unlock the strike plate lock mechanism connected to a Dahua VTO2111D Intercom.  Other models not tested but may work.
@@ -112,3 +112,5 @@ After installation:
 - I have no affiliation with Dahua or any company rebanding Dahua devices.
 - Use this plugin at your own risk.
 - You are licensed to use this plugin free of charge but within the limited of the license distributed with this plugin.
+
+</p>
