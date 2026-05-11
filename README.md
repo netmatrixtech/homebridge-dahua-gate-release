@@ -9,7 +9,7 @@
 ![Homebridge](https://img.shields.io/badge/homebridge-%3E=1.6.0-blue)
 ![License](https://img.shields.io/github/license/netmatrixtech/homebridge-dahua-gate-release)
 
-<span>
+</span>
 
 
 # Homebridge Dahua Gate Release (Platform Plugin)
