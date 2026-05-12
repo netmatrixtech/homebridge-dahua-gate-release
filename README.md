@@ -1,5 +1,5 @@
 <p align="center">
- <a href="https://github.com/netmatrixtech/homebridge-dahua-gate-release"><img alt="Dahua Gate Release" src="/assets/icon-medium.png" width="290px"></a>
+ <a href="https://github.com/netmatrixtech/homebridge-dahua-gate-release"><img alt="Dahua Gate Release" src="/assets/icon-small-medium.png" width="290px"></a>
 </p>
 <span align="center">
 
