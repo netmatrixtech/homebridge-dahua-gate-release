@@ -2,7 +2,7 @@
  <a href="https://github.com/netmatrixtech/homebridge-dahua-gate-release"><img alt="Dahua Gate Release" src="/assets/icon-small-medium.png" width="290px"></a>
 </p>
 <span align="center">
-[![verified-by-homebridge](https://badgen.net/badge/homebridge/verified/purple)](https://github.com/homebridge/homebridge/wiki/Verified-Plugins)
+![verified-by-homebridge](https://badgen.net/badge/homebridge/verified/purple)](https://github.com/homebridge/homebridge/wiki/Verified-Plugins)
 ![npm](https://img.shields.io/npm/v/homebridge-dahua-gate-release)
 ![npm downloads](https://img.shields.io/npm/dt/homebridge-dahua-gate-release)
 ![Node.js](https://img.shields.io/badge/node-%3E=18.0.0-green)
