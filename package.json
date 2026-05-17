@@ -41,6 +41,16 @@
     "logo": "assets/icon-medium.png",
     "platform": "DahuaGateRelease"
   },
+  "funding": [
+  {
+    "type" : "github",
+    "url" : "https://github.com/sponsors/netmatrixtech"
+  },
+  {
+    "type" : "paypal",
+    "url" : "https://paypal.me/transfertotim"
+  }
+],
   "dependencies": {
     "@mhoc/axios-digest-auth": "^0.8.0"
   },
