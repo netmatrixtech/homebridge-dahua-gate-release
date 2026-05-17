@@ -1,5 +1,6 @@
-
+<p align="center">
 <a href="https://github.com/netmatrixtech/homebridge-dahua-gate-release"><img alt="Dahua Gate Release" src="/assets/icon-small-medium.png" width="290px"></a>
+</P>
 
 [![verified-by-homebridge](https://badgen.net/badge/homebridge/verified/purple)](https://github.com/homebridge/homebridge/wiki/Verified-Plugins)
 ![npm](https://img.shields.io/npm/v/homebridge-dahua-gate-release)
