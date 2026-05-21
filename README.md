@@ -1,5 +1,5 @@
 <p align="center">
-<a href="https://github.com/netmatrixtech/homebridge-dahua-gate-release"><img alt="Dahua Gate Release" src="/assets/icon-small-medium.png" width="290px"></a>
+<a href="https://github.com/netmatrixtech/homebridge-dahua-gate-release"><img alt="Dahua Gate Release" src="https://github.com/netmatrixtech/homebridge-dahua-gate-release" width="290px"></a>
 
 
 [![verified-by-homebridge](https://badgen.net/badge/homebridge/verified/purple)](https://github.com/homebridge/homebridge/wiki/Verified-Plugins)
@@ -23,6 +23,7 @@ The plugin adds a virtual switch to HomeKit. Turning it on (or asking Siri) send
 ### Prerequisites
 
 - To use this plugin, you will need to already have:
+  - Dahua VTO intercom with CGI Enabled within its Local Settings and unlock duration set.
   - [Node](https://nodejs.org): latest version of `v22` or `v24`. (`26` not tested)
   - [Homebridge](https://homebridge.io): `v1.6`-`v2.0.1`
 
@@ -32,8 +33,13 @@ Once installed, go to the plugin config and configure the appropriate details as
 Restart the plugin
 Enable to Child Bridge
 Scan the QR in the Home app by adding a new accessory.
-Button should now appear within the Home app or you can control via Siri.
-NOTE: The gate/door will default to showing a 'Locked' and switch to 'Unlock' temporarily for 20 seconds (default) before reverting back to a locked state. You can disabled relocking if necessary.
+Button should now appear within the Apple Home app or you can control via Siri.
+
+
+## Addition information
+The gate/door button will default to showing a 'Locked' state and switch to 'Unlocked' temporarily for the number of unlock seconds you define in the plugin before reverting
+the button back to a virtual locked state. Align the unlock duration in set in the Intercom to the unlock duration within the plugin.
+You can also disable relocking of the virtual butotn if necessary by entering '0' (zero) unlock duration.
 
 ```json
 {
@@ -45,16 +51,16 @@ NOTE: The gate/door will default to showing a 'Locked' and switch to 'Unlock' te
 "password": "YourPassword",
 "pollInterval": 60000
 }
+```
 
 ## Automation
 
 If you're attempting to automate an unlock or lock of the door/gate, Apple's treatment of security devices like Gates, Garage doors
 and Security Systems can be tricky to automate based on geolocation services or remote access. Thus, you'll need to use another virtual/dummy accessory, using
-another Homekit plugin such as 'Homebridge Virtual Switches'. 
+another Homebridge plugins such as 'Homebridge Virtual Accessories'. 
 
 
-
-Designed for the **Dahua VTO2111D** intercom, but compatible with many Dahua VTO and rebranded models using Digest Authentication.
+Designed for the **Dahua VTO2111D** intercom, but compatible likely compatible with many other Dahua / Rebranded Intercom models with CGI Enabled.
 
 ---
 
@@ -62,11 +68,10 @@ Designed for the **Dahua VTO2111D** intercom, but compatible with many Dahua VTO
 
 - Unlock your gate using **Siri**, **Apple Home**, or **Automations**
 - Uses **Digest Auth** for secure communication
-- Automatic **re-lock** after a configurable delay
+- Automatic **re-lock** of the virtual button after a configurable delay
 - Retry logic with configurable attempts + delay
 - Polling to detect intercom availability
 - Full support for **Child Bridge** mode
-- Clean shutdown with safe timers (Node 18–26 compatible)
 
 ---
 
@@ -76,7 +81,8 @@ Designed for the **Dahua VTO2111D** intercom, but compatible with many Dahua VTO
 2. Go to **Plugins**  
 3. Search for **“Homebridge Dahua Gate Release”**  
 4. Install the plugin  
-5. Restart Homebridge
+5. Configure to your intercom
+6. Restart Homebridge
 
 ---
 
@@ -85,7 +91,7 @@ Designed for the **Dahua VTO2111D** intercom, but compatible with many Dahua VTO
 After installation:
 
 1. Open the plugin settings  
-2. Enter your Dahua intercom details  
+2. Enter your Dahua intercom details (set unlock duration to be the same duration within the intercom)
 3. Enable **Child Bridge** (recommended)  
 4. Save & restart Homebridge  
 5. Scan the QR code in the Home app to add the accessory
