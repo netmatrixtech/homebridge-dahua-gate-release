@@ -41,27 +41,6 @@ The gate/door button will default to showing a 'Locked' state and switch to 'Unl
 the button back to a virtual locked state. Align the unlock duration in set in the Intercom to the unlock duration within the plugin.
 You can also disable relocking of the virtual butotn if necessary by entering '0' (zero) unlock duration.
 
-```json
-{
-    "fallbackRetries": 2,
-    "fallbackDelay": 5000,
-    "autoLockTime": 20,
-    "autoLockUnit": "seconds",
-    "pollInterval": 60000,
-    "verboseLogging": true,
-    "ip": "192.168.1.110",
-    "username": "admin",
-    "password": "admin",
-    "name": "DahuaGateRelease",
-    "_bridge": {
-        "name": "Homebridge Dahua Gate Release",
-        "username": "00:AA:00:AA:00:AA",
-        "port": 30645
-    },
-    "accessoryName": "Dahua Gate",
-    "platform": "DahuaGateRelease"
-}
-```
 
 ## Automation
 
@@ -108,20 +87,28 @@ After installation:
 
 ### Example configuration
 
+
 ```json
 {
-  "platform": "DahuaGateRelease",
-  "name": "Front Gate",
-  "ip": "192.168.1.110",
-  "username": "admin",
-  "password": "YourPassword",
-  "fallbackRetries": 1,
-  "fallbackDelay": 5000,
-  "autoLockTime": 20,
-  "autoLockUnit": "seconds",
-  "pollInterval": 60000,
-  "verboseLogging": false
+    "fallbackRetries": 2,
+    "fallbackDelay": 5000,
+    "autoLockTime": 20,
+    "autoLockUnit": "seconds",
+    "pollInterval": 60000,
+    "verboseLogging": true,
+    "ip": "192.168.1.110",
+    "username": "admin",
+    "password": "admin",
+    "name": "DahuaGateRelease",
+    "_bridge": {
+        "name": "Homebridge Dahua Gate Release",
+        "username": "00:AA:00:AA:00:AA",
+        "port": 30645
+    },
+    "accessoryName": "Dahua Gate",
+    "platform": "DahuaGateRelease"
 }
+```
 
 ### Disclaimer
 
