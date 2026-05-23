@@ -8,6 +8,7 @@
 ![Node.js](https://img.shields.io/badge/node-%3E=18.0.0-green)
 ![Homebridge](https://img.shields.io/badge/homebridge-%3E=1.6.0-blue)
 ![License](https://img.shields.io/github/license/netmatrixtech/homebridge-dahua-gate-release)
+[![GitHub last commit](https://img.shields.io/github/last-commit/netmatrixtech/homebridge-dahua-gate-release)](https://github.com/netmatrixtech/homebridge-dahua-gate-release)
 </p>
 
 
@@ -115,4 +116,4 @@ After installation:
 - I have created this plugin in my own time free for you to use.
 - I have no affiliation with Dahua or any company rebanding Dahua devices.
 - Use this plugin at your own risk.
-- You are licensed to use this plugin free of charge but within the limited of the license distributed with this plugin.
+- You are licensed to use this plugin free of charge but within the limits of the MIT license distributed with this plugin.
