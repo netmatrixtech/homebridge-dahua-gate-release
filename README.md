@@ -43,13 +43,23 @@ You can also disable relocking of the virtual butotn if necessary by entering '0
 
 ```json
 {
-"accessory": "DahuaGateRelease",
-"name": "Front Gate",
-"accessoryName": "Front Gate"
-"ip": "192.168.1.110",
-"username": "admin",
-"password": "YourPassword",
-"pollInterval": 60000
+    "fallbackRetries": 2,
+    "fallbackDelay": 5000,
+    "autoLockTime": 20,
+    "autoLockUnit": "seconds",
+    "pollInterval": 60000,
+    "verboseLogging": true,
+    "ip": "192.168.1.110",
+    "username": "admin",
+    "password": "admin",
+    "name": "DahuaGateRelease",
+    "_bridge": {
+        "name": "Homebridge Dahua Gate Release",
+        "username": "00:AA:00:AA:00:AA",
+        "port": 30645
+    },
+    "accessoryName": "Dahua Gate",
+    "platform": "DahuaGateRelease"
 }
 ```
 
