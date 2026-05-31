@@ -1,6 +1,6 @@
 {
   "name": "homebridge-dahua-gate-release",
-  "version": "2.1.4",
+  "version": "2.2.0",
   "description": "Homebridge platform plugin to release an electronic gate/door controlled by a Dahua VTO intercom using Digest Auth.",
   "main": "index.js",
   "type": "commonjs",
@@ -33,7 +33,7 @@
   },
   "engines": {
     "homebridge": "^1.6.0 || ^2.0.0",
-    "node": "^22.12.0 || ^24.0.0"
+    "node": ">=22.0.0"
   },
   "homebridge": {
     "pluginType": "platform",
@@ -42,30 +42,30 @@
     "platform": "DahuaGateRelease"
   },
   "funding": [
-  {
-    "type" : "github",
-    "url" : "https://github.com/sponsors/netmatrixtech"
-  },
-  {
-    "type" : "paypal",
-    "url" : "https://paypal.me/transfertotim"
-  }
-],
-  "dependencies": {
-    "@mhoc/axios-digest-auth": "^0.8.0"
-  },
-  "overrides": {
-    "axios": "^1.6.0"
-  },
-  "bundledDependencies": [
-    "@mhoc/axios-digest-auth"
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/netmatrixtech"
+    },
+    {
+      "type": "paypal",
+      "url": "https://paypal.me/transfertotim"
+    }
   ],
+
+  "releaseNotes": "⚠️ IMPORTANT: If upgrading from 2.1.x or earlier, please remove the previous child bridge and accessory instance, install, and then and re-add the child bridge and accessory into HomeKit. This ensures a clean environment for the new digest-auth engine and dependency changes.",
+
+  "dependencies": {
+    "digest-fetch": "^1.3.0",
+    "node-fetch": "^2.6.7"
+  },
+
   "files": [
     "index.js",
     "config.schema.json",
     "CHANGELOG.md",
     "RELEASE_NOTES.md",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "assets"
   ]
 }

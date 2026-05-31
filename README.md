@@ -14,7 +14,7 @@
 
 # Homebridge Dahua Gate Release
 
-A Homebridge plugin that creates a virtual button to unlock the strike plate lock mechanism connected to a Dahua VTO2111D Intercom.  Other models not tested but may work.
+A Homebridge plugin that creates a virtual button to unlock an strike plate lock mechanism connected to a Dahua VTO Intercom.  Other models not tested but may work. This could be used for gate or door release.
 When unlocked (or when you ask Siri to *“Open the gate”*), the plugin sends a Dahua CGI command to open it. 
 The plugin adds a virtual switch to HomeKit. Turning it on (or asking Siri) sends `openDoor` CGI command to a Dahua VTO2111D intercom.
 
@@ -50,7 +50,7 @@ and Security Systems can be tricky to automate based on geolocation services or 
 another Homebridge plugins such as 'Homebridge Virtual Accessories'. 
 
 
-Designed for the **Dahua VTO2111D** intercom, but compatible likely compatible with many other Dahua / Rebranded Intercom models with CGI Enabled.
+Designed for the **Dahua VTO2111** intercom, but likely to work with many other Dahua / Rebranded VTO Intercom models with CGI Enabled.
 
 ---
 

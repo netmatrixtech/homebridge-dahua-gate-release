@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 
 ---
+
+## [2.2.0] (including Beta versions) - 2026-05-31
+
+### Install requirements
+NOTE: As this version changes node dependency, you will need to remove the previous version Child Bridge and Accessory from Homebridge & Homekit and then re-register a new child bridge and accessory into Homebirdge/Homekit.
+
+### Added
+- Startup **health check** to validate device reachability and digest authentication
+- Full configuration defaults applied at runtime
+- Strict configuration validation (plugin will not load with missing required fields)
+
+### Changed
+- Replaced `@mhoc/axios-digest-auth` with `digest-fetch` for improved stability
+- Updated `config.schema.json` to align with runtime defaults
+- Updated `package.json` to remove axios and add digest-fetch
+
+---
+
 ## [2.1.4] - 2026-05-11
 ### Added
 - New `accessoryName` config option allowing users to name the HomeKit accessory independently of the platform/child bridge name
@@ -17,6 +35,8 @@ All notable changes to this project will be documented in this file.
 ### Changed
 - Updated config.schema.json to include new field
 - Updated README and release notes to document new naming feature
+
+---
 
 ## [2.0.0] - 2026-05-08
 ### Major

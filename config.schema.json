@@ -2,13 +2,10 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "pluginAlias": "DahuaGateRelease",
   "pluginType": "platform",
-
   "schema": {
     "title": "Dahua Gate Release",
     "type": "object",
-
     "required": ["name", "accessoryName", "ip", "username", "password"],
-
     "properties": {
       "name": {
         "type": "string",
@@ -16,27 +13,26 @@
         "default": "Dahua Gate Release",
         "minLength": 1
       },
-		"accessoryName": {
-		  "type": "string",
-		  "title": "Accessory Name (shown in Home app)",
-		  "default": "Dahua Gate",
-		  "minLength": 1
-		},
+      "accessoryName": {
+        "type": "string",
+        "title": "Accessory Name (shown in Home app)",
+        "default": "Dahua Gate",
+        "minLength": 1
+      },
       "ip": {
         "type": "string",
         "title": "Intercom IP Address",
         "format": "ipv4",
         "placeholder": "192.168.1.110",
+        "default": "192.168.1.110",
         "description": "The IP address of your Dahua or Rebranded VTO intercom."
       },
-
       "username": {
         "type": "string",
         "title": "Intercom username",
         "minLength": 1,
         "placeholder": "admin"
       },
-
       "password": {
         "type": "string",
         "title": "Intercom Password",
@@ -44,7 +40,6 @@
         "format": "password",
         "placeholder": "••••••••"
       },
-
       "fallbackRetries": {
         "type": "integer",
         "title": "Retry Attempts on Failure",
@@ -52,7 +47,6 @@
         "minimum": 0,
         "default": 1
       },
-
       "fallbackDelay": {
         "type": "integer",
         "title": "Retry Delay (ms)",
@@ -60,23 +54,19 @@
         "minimum": 0,
         "default": 5000
       },
-
       "autoLockTime": {
         "type": "integer",
         "title": "Accessory Auto-lock Duration (not the physical lock)",
-        "description": "This is the duration the accessory / Home App button appears open before it reverts the button back to a locked state. Set to 0 to disable auto-lock. Note: The auto-lock duration of the physical strike plate is set within the intercom itself. The intercom doesn't allow Close commands to relock.",
+        "description": "Duration the accessory appears unlocked before reverting.",
         "minimum": 0,
         "default": 20
       },
-
       "autoLockUnit": {
         "type": "string",
         "title": "Auto-lock Unit",
-        "description": "",
         "enum": ["seconds", "hours", "days"],
         "default": "seconds"
       },
-
       "pollInterval": {
         "type": "integer",
         "title": "Poll Interval (ms)",
@@ -84,21 +74,18 @@
         "minimum": 1000,
         "default": 60000
       },
-
       "verboseLogging": {
         "type": "boolean",
         "title": "Enable Verbose Logging",
-        "description": "Show detailed debug logs in the Homebridge console.",
         "default": false
       }
     },
-
     "layout": [
       {
         "type": "fieldset",
         "title": "Connection Settings",
         "expandable": false,
-       "items": ["name", "accessoryName", "ip", "username", "password"]
+        "items": ["name", "accessoryName", "ip", "username", "password"]
       },
       {
         "type": "fieldset",

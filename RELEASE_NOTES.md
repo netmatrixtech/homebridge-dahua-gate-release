@@ -1,3 +1,20 @@
+## 🚀 Version 2.2.0 — Rewritten using Digest-Fetch module, Validation & Health Check
+
+This release modernises the HTTP layer and hardens plugin startup behaviour.
+NOTE: As this version changes node dependency, you will need to remove the previous version Child Bridge and Accessory and re-register a child bridge and accessory into Homekit.
+
+### ✨ New
+- Startup **health check** verifies device reachability and digest authentication
+- Configuration defaults now applied automatically at runtime
+- Plugin now validates required fields and refuses to load if invalid
+
+### 🔧 Improved
+- Replaced `@mhoc/axios-digest-auth` with `digest-fetch` for more reliable Digest Auth
+- Updated `config.schema.json` to match runtime defaults (including IP `192.168.1.110`)
+- Updated `package.json` to remove axios and add digest-fetch
+
+---
+
 ## 🚀 Version 2.1.4 — Accessory Renaming Support
 
 This update adds one of the most requested features:  
@@ -17,7 +34,7 @@ You can now name the HomeKit accessory separately from the platform/child bridge
 - Prevents duplicate accessories appearing in the Home app
 - Automatically renames the old accessory to match the new `accessoryName`
 
-
+---
 
 ## 🚀 Version 2.0.0 — Major Platform Rewrite
 
